@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation Demo</title>
+    <script src="script.js" defer></script>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 3px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Dynamic DOM Manipulation</h1>
+        <p>Explore JavaScript's power to interact with HTML</p>
+    </header>
+    
+    <main>
+        <section class="container">
+            <h2>Text Manipulation</h2>
+            <p id="dynamic-text">This text will change when you click the button below.</p>
+            <button id="change-text-btn">Change Text</button>
+        </section>
+        
+        <section class="container">
+            <h2>Style Modification</h2>
+            <p id="style-demo">This paragraph's style can be modified with JavaScript.</p>
+            <div>
+                <button id="change-color-btn">Change Color</button>
+                <button id="change-size-btn">Change Size</button>
+                <button id="add-highlight-btn">Add Highlight</button>
+            </div>
+        </section>
+        
+        <section class="container">
+            <h2>Element Addition & Removal</h2>
+            <div id="elements-container">
+                <p>Click the buttons below to add or remove list items.</p>
+                <ul id="dynamic-list">
+                    <li>Default item 1</li>
+                    <li>Default item 2</li>
+                </ul>
+            </div>
+            <button id="add-element-btn">Add Item</button>
+            <button id="remove-element-btn">Remove Item</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 DOM Manipulation Demo</p>
+    </footer>
+    
+    
+</body>
+</html>
